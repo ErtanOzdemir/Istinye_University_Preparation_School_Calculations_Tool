@@ -8,7 +8,7 @@ creator=""" This program was created by Ertan Özdemir"""
 sunum= """
 *****************************************
   Istinye University Preparation School
-      Points Calculation Program v1.0
+    Points Calculation Program v1.0.1
 *****************************************
 """
 
@@ -93,11 +93,15 @@ while True:
             task_tr=int(input("Task Completion Puanınız(5p): "))
             yoklama_tr=int(input("Yoklama Puanı (10p) : "))
 
-            adim1=quarter_tr+content_tr+quiz_tr+self_tr+book_tr+assigment_tr+ders_tr+task_tr+yoklama_tr
-            adim2=(adim1*100)/350
+            adim1=self_tr+book_tr+assigment_tr+ders_tr+task_tr+yoklama_tr
+            adim1_1=(quiz_tr*10)/100
+            adim1_2=(quarter_tr*20)/100
+            adim1_3=(content_tr*20)/100
+
+            adim2=adim1+adim1_1+adim1_2+adim1_3
             print(adim2)
 
-            if adim2>=75:
+            if adim2>=80:
                 print("Bravo! ortalamanız {} olduğu için Level Achievement sınavına girebilirsiniz. ".format(int(adim2)))
                 input("Enter'a basın.")
                 os.system('cls' if os.name=="nt" else "clear")
@@ -121,10 +125,15 @@ while True:
             task_en=int(input("Task Completion Point(5p): "))
             attendance_en=int(input("Attendance Point (10p) : "))
 
-            step1=quarter_en+content_en+quiz_en+self_en+book_en+assigment_en+class_en+task_en+attendance_en
-            step2=(step1*100)/350
+            step1=self_en+book_en+assigment_en+class_en+task_en+attendance_en
+            step1_1=(quiz_en*10)/100
+            step1_2=(quarter_en*20)/100
+            step1_3=(content_en*20)/100
+			
+            step2=step1+step1_1+step1_2+step1_3
+            print(step2)
 
-            if step2>=75:
+            if step2>=80:
                 print("Bravo! Your avarage is {}. You can enter Level Achievement. ".format(int(step2)))
                 input("Press Enter")
                 os.system('cls' if os.name=="nt" else "clear")
@@ -148,9 +157,13 @@ while True:
         task_en=int(input("Task Completion Point(5p): "))
         attendance_en=int(input("Attendance Point (10p) : "))
 
-        step3=quarter_en+quiz_en+self_en+book_en+assigment_en+class_en+task_en+attendance_en
-        step4=262.5-step3
-        print("You must take {} points".format(step4))
+        step3=self_en+book_en+assigment_en+class_en+task_en+attendance_en
+        step3_1=(quiz_en*10)/100
+        step3_2=(quarter_en*20)/100
+        
+        step4=80-(step3+step3_1+step3_2)
+        step5=(step4*100)/20
+        print("You must take {} points".format(step5))
         input("Press Enter")
         os.system('cls' if os.name=="nt" else "clear")
 

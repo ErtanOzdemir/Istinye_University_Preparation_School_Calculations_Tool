@@ -11,4 +11,4 @@ Bu program sayesinde İstinye Üniversitesi hazırlık okulu bünyesinde yapıla
 
 With this program, you can calculate easily to Average Calculations and to "How many points should I take from the Content Base test?" 
 
-![alt text](https://stickker.net/wp-content/uploads/2018/09/yerli_uretim_vektorel_logo_190918_2.png.png)
+![alt text](https://www.ozdemirertan.com/yerli_uretim_vektorel_logo_190918_2-png/)
